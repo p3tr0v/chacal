@@ -48,7 +48,8 @@ Golang anti-vm framework for Red Team and Pentesters
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-Chacal is an anti-vm framework written in Golang in order to support Red Team and Pentesters in your assalts, in Windows environment!
+Chacal is an anti-vm framework written in Golang in order to support Red Team and Pentesters in your assalts, in Windows environment!<br/>
+!!I'm not responsible for your acts!!
 
 
 
@@ -87,7 +88,7 @@ import (
 ```
 ### Anti-Debugging
 ` "github.com/p3tr0v/chacal/antidebug"` <br/>
-Antidebug package implements strategies to avoid common programs that are used for debugging.
+Antidebug package implement strategies to avoid common programs that are used for debugging.
 
 #### Process
 `antidebug.ByProcessWatcher()` return boolean <br/>
@@ -102,13 +103,13 @@ if antidebug.ByProcessWatcher() { // Whether some debugger program founded, ente
 `antidebug.ByTimmingDiff(time, int)` return boolean<br/>
 Compare whether the difference between initial and end time is bigger than difference allowed (in seconds).
 When debugging, some analisys use to take some time into a function.
-Grag the time just in the begging of the function and later in the end, before go out, and ask Chacal to compare.<br/>
+Grab the time just in the begging of the function and later in the end, before go out, and ask Chacal to compare.<br/>
 Example:
 ```
 func myFuncHere(){
   initTime := time.Now() // grab the time here
   // do your actions here
-  if antidebug.ByTimmingDiff(timeInit, 2){ // if your function takes 2 seconds or more, your malware must be debbuging. You chose your time.
+  if antidebug.ByTimmingDiff(timeInit, 2){ // if your function takes 2 seconds or more, your malware must be debugged. You chose your time.
     // exit or wait
   }
 }
@@ -116,7 +117,7 @@ func myFuncHere(){
 
 ### Anti-Memory
 ` "github.com/p3tr0v/chacal/antimem"` <br/>
-Antimem package implements strategies to avoid common programs that are used for inspect memory process.
+Antimem package implement strategies to avoid common programs that are used for inspect memory process.
 
 #### Memory
 `antimem.ByMemWatcher()` return boolean <br/>
@@ -130,7 +131,7 @@ if antimem.ByMemWatcher() { // Whether some program used for inspect memory foun
 
 ### Anti-VM
 ` "github.com/p3tr0v/chacal/antivm"` <br/>
-Antivm package implements strategies to avoid virtualized environment.
+Antivm package implement strategies to avoid virtualized environment.
 
 #### Disk size
 `antivm.BySizeDisk( int )` return boolean <br/>
@@ -143,7 +144,7 @@ if antivm.BySizeDisk(100) { // whether total disk size is less than 100 GB, ente
 ```
 #### Virtual disk
 `antivm.IsVirtualDisk()` boolean <br/>
-Check whether may be a virtual disk. <br/>
+Check whether may be on virtual disk. <br/>
 Example:
 ```
 if antivm.IsVirtualDisk() { // If Chacal guess you are on virtual disk, enter here.
