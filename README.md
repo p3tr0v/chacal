@@ -10,7 +10,7 @@ Golang anti-vm framework for Red Team and Pentesters
 
   
   <p align="center">
-    Let Chacal hidde your malware in an assalt operation!
+    Let Chacal hidde your malware in your assalt operation!
     <br />
     <br />
     <br />
