@@ -5,7 +5,7 @@ Golang anti-vm framework for Red Team and Pentesters
 
 <p align="center">
   <a href="https://github.com/p3tr0v/chacal">
-    <img src="https://github.com/p3tr0v/chacal/blob/main/logo.png" alt="Logo" width="190" height="160">
+    <img src="https://github.com/p3tr0v/chacal/blob/main/chacal.jpg" alt="Logo" width="190" height="160">
   </a>
 
   
