@@ -22,24 +22,25 @@ Golang anti-vm framework for Red Team and Pentesters
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#About-the-project">About The Project</a>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#Getting-started">Getting Started</a>
       <ul>
-        <li><a href="#dependencies">Dependencies</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#Dependencies">Dependencies</a></li>
+        <li><a href="#Installation">Installation</a></li>
       </ul>
     </li>
     <li>
-      <a href="#usage">Usage</a>
+      <a href="#Usage">Usage</a>
       <ul>
         <li><a href="#Anti-Debugging">Anti-Debugging </a></li>
         <li><a href="#Anti-Memory">Anti-Memory</a></li>
         <li><a href="#Anti-VM">Anti-VM</a></li>
       </ul>
     </li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#Contact">Contact</a></li>
+    <li><a href="#Update">Contact</a></li>
   </ol>
 </details>
 
@@ -165,4 +166,5 @@ if antivm.ByMacAddress() { If Chacal guess you are on virtual MAC Address, enter
 Telegram: @p3tr0v <br/>
 LinkedIn: Test your OSINT skills ;)
 
-
+## Update
+* 06-26-2021 : New process and MAC address added.
