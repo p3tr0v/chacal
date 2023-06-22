@@ -62,7 +62,7 @@ Firstly, make sure that your dependencies are satisfied.
 ### Installation
 In your prompt type
   ```
-  go install github.com/p3tr0v/chacal@latest
+  go get github.com/p3tr0v/chacal
   ```
 ## Usage
 Into your program, import the packages used by Chacal
