@@ -51,8 +51,7 @@ Golang anti-vm framework for Red Team and Pentesters
 ## About The Project
 Chacal is an anti-vm framework written in Golang in order to support Red Team and Pentesters in your assalts, in Windows environment!<br/>
 
-Disclaimer: I AM NOT RESPONSIBLE FOR YOUR ACTIONS
-
+<b> <u> DISCLAIMER: I AM NOT RESPONSIBLE FOR YOUR ACTIONS</u> </b>
 
 
 <!-- GETTING STARTED -->
