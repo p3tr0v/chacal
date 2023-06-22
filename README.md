@@ -1,5 +1,5 @@
 # Chacal
-Golang anti-vm framework for Red Team and Pentesters
+Golang Anti-VM Framework for Red Team and Pentesters
 
 
 
