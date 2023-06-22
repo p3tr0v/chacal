@@ -1,5 +1,5 @@
 # Chacal
-Golang anti-vm framework for Red Team and Pentesters
+Golang Anti-VM Framework for Red Team and Pentesters
 
 
 
@@ -10,7 +10,7 @@ Golang anti-vm framework for Red Team and Pentesters
 
   
   <p align="center">
-    Let Chacal hidde your malware in your assalt operation!
+    Let Chacal hide your malware in your assalt operation!
     <br />
     <br />
     <br />
@@ -49,30 +49,16 @@ Golang anti-vm framework for Red Team and Pentesters
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-Chacal is an anti-vm framework written in Golang in order to support Red Team and Pentesters in your assalts, in Windows environment!<br/>
-!!I'm not responsible for your acts!!
+Chacal is an anti-VM framework written in Golang, designed to support Red Teams and Pentesters in Windows environments.<br/>
 
+<b> <u> DISCLAIMER: I AM NOT RESPONSIBLE FOR YOUR ACTIONS</u> </b>
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 Firstly, make sure that your dependencies are satisfied.
 
-### Dependencies
-Chacal has 3 dependencies:
-* wmi
-  ```
-  go get github.com/StackExchange/wmi@v0.0.0-20210224194228-fe8f1750fd46
-  ```
-* go-ole
-  ```
-  go get github.com/go-ole/go-ole@v1.2.5 
-  ```
-* go-ps
-  ```
-  go get github.com/mitchellh/go-ps@v1.0.0 
-  ```
-  
+
 ### Installation
 In your prompt type
   ```
@@ -121,7 +107,7 @@ func myFuncHere(){
 Antimem package implement strategies to avoid common programs that are used for inspect memory process.
 
 #### Memory
-`antimem.ByMemWatcher()` return boolean <br/>
+`antimem.ByMemWatcher() bool ` <br/>
 This function look for common programs used for inspect memory, like rammap.exe, dumpit.exe, etc. <br/>
 Example:
 ```
@@ -135,7 +121,7 @@ if antimem.ByMemWatcher() { // Whether some program used for inspect memory foun
 Antivm package implement strategies to avoid virtualized environment.
 
 #### Disk size
-`antivm.BySizeDisk( int )` return boolean <br/>
+`antivm.BySizeDisk( int ) bool` <br/>
 Check total size disk, in GB. <br/>
 Example:
 ```
@@ -144,7 +130,7 @@ if antivm.BySizeDisk(100) { // whether total disk size is less than 100 GB, ente
 }
 ```
 #### Virtual disk
-`antivm.IsVirtualDisk()` boolean <br/>
+`antivm.IsVirtualDisk() bool` <br/>
 Check whether may be on virtual disk. <br/>
 Example:
 ```
@@ -154,7 +140,7 @@ if antivm.IsVirtualDisk() { // If Chacal guess you are on virtual disk, enter he
  ```
 
 #### Known virtual MAC Address
-`antivm.ByMacAddress()` boolean <br/>
+`antivm.ByMacAddress() bool`  <br/>
 Look for known virtualized MAC Address. <br/>
 Example:
 ```
@@ -168,3 +154,4 @@ LinkedIn: Test your OSINT skills ;)
 
 ## Update
 * 06-26-2021 : New process and MAC address added.
+* 22-06-2023 : Update Markdown By @Nasfame
